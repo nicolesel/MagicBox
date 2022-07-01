@@ -1,11 +1,44 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
 
 body{
     overflow-x: hidden;
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(231,252,70,0.15029761904761907) 100%);
     
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Suranna', serif;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/1.jpg);
+
+}
+.banner p{
+    font-weight: 300;
+    color:#111;
+}
+
+/*
+.nav{
+    position:relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+
 }
 .imglogo{
     width:90px;
@@ -17,7 +50,7 @@ body{
     height: 70vh;
 }
 
-@media only screen and (min-width: 600px)  {
+@media only screen and (min-width: 900px)  {
    
 }
 
@@ -97,3 +130,4 @@ body{
   .wpp{
       background-color: rgba(153, 153, 153, 0.402);
   }
+  */
