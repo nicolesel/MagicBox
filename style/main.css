@@ -20,12 +20,30 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/img/1.jpg);
+    background-size:cover;
 
 }
 .banner p{
-    font-weight: 300;
+    font-weight: 550;
     color:#111;
+    background-color: rgba(255, 255, 255, 0.331);
+    border-radius: 30px;
+    padding: 20px;
+    text-shadow: rgb(255, 254, 251) 1px 0 20px;
+}
+.banner h2{
+    font-size: 4.5em;
+    color: rgb(255, 255, 255);
+    align-items:flex-end;
+    
+}
+.banner .content{
+    max-width: 700px;
+    text-align: center;
+}
+.logo{
+    max-width: 200px;
 }
 
 /*
