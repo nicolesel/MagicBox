@@ -79,11 +79,11 @@ nav.sticky ul li a:hover{
     margin: 3px;
 }
 @keyframes animacionDelBanner {
-    0%    { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/1.jpg); }
-    45%   { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/3.jpg); }
-    100%   { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/5.jpg); }
+    0%    { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(1.jpg); }
+    45%   { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(1.jpg); }
+    100%   { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(1.jpg); }
 
-  }
+}
 .banner{
     position: relative;
     width: 100%;
