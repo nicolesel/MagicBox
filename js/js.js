@@ -9,17 +9,16 @@ window.addEventListener('scroll',function(){
 
 function changeBg() {
     const images=[
-        'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/img/1.jpg")',
-        'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/img/3.jpg")',
+        'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/img/1.jpg)',
+        'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/img/3.jpg)',
         
-        'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/img/5.jpg")',
+        'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/img/5.jpg)',
     ]
     const banner=document.querySelector(".banner")
     const bg=images[Math.floor(Math.random()* images.length)]
     banner.style.backgroundImage= bg  
 }
-setInterval(changeBg,900)
-
+setInterval(changeBg,900);
 
 function togglemenu(){
     const menutoggle=document.querySelector('.menutoggle')
