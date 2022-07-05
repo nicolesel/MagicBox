@@ -79,12 +79,23 @@ nav.sticky ul li a:hover{
     margin: 3px;
 }
 @keyframes animacionDelBanner {
-    0%    { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(1.jpg); }
-    45%   { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(1.jpg); }
-    100%   { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(1.jpg); }
+    0%    { background: url('../img/1.jpg');
+        background-position:center;
+        background-size: cover;
+       }
+    45%   { background: url('../img/3.jpg'); 
+        background-position:center;
+        background-size: cover;
+        }
+    100%  { background: url('../img/5.jpg'); 
+        background-position:center;
+        background-size: cover;
+        
+        }
 
 }
-.banner{
+.banner {
+    overflow: hidden;
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -94,8 +105,11 @@ nav.sticky ul li a:hover{
     background-size:cover;
     background-position:center;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    animation: animacionDelBanner 5s infinite;
+    animation: animacionDelBanner 10s infinite;
+    /*background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );*/
+    transition-delay: 0s;
 }
+
 .banner p{
     font-weight: 550;
     color:rgb(255, 255, 255);

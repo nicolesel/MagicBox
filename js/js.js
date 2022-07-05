@@ -11,7 +11,18 @@ function togglemenu(){
     menutoggle.classList.toggle('active')
     navigation.classList.toggle('active')
 }
-
+/*function changeBg() {
+    const images=[
+        'url("/img/1.jpg")',
+        'url("/img/3.jpg")',
+        
+        'url("/img/5.jpg")',
+    ]
+    const banner=document.querySelector(".banner")
+    const bg=images[Math.floor(Math.random()* images.length)]
+    banner.style.backgroundImage= 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),'+bg  
+}
+setInterval(changeBg,900)*/
 
 /*HACER LENTO*/
 
