@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
+
+/*html {
+    scroll-behavior: smooth;
+}*/
+body{
+    
+    background: rgb(255,250,0);
+/*background: radial-gradient(circle, rgba(255,250,0,1) 0%, rgba(255,180,44,1) 32%, rgba(255,25,140,0.923406862745098) 67%, rgba(169,23,255,1) 100%);*/
+background-image: url(/img/steve.jpeg);
+    max-height: 100vh;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  background-size: cover;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Suranna', serif;
+}
+.imglogo{
+    max-width: 140px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 150px 36px -28px inset;
+}
+nav ul{
+    position: relative;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 550;
+}
+nav ul li a:hover{
+    letter-spacing: 1px;
+    color: #fff;
+   
+    border-radius: 20px;
+    padding: 3px;
+    margin: 3px;
+}
+nav.sticky{
+    
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow:1 5px 20px rga(0,0,0,0.05);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    top:2px;
+}
+nav.sticky ul li a {
+    color:#111;
+    font-weight: 550;
+}
+nav.sticky .imglogo {
+    max-width: 100px;
+}
+nav.sticky ul li a:hover{
+    letter-spacing: 1px;
+   
+    
+    border-radius: 20px;
+    padding: 3px;
+    margin: 3px;
+}
+@keyframes animacionDelBanner {
+    0%    { background: url('../img/1.jpg');
+        
+        background-size: cover;
+        background-position-x:center ;
+       }
+    45%   { background: url('../img/3.jpg'); 
+        
+        background-size: cover;
+        background-position-x:center ;
+        }
+    100%  { background: url('../img/5.jpg'); 
+        
+        background-size: cover;
+        background-position-x:center ;
+        
+        }
+
+}
+#banner {
+    overflow: hidden;
+    position: relative;
+    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-position: center;
+   
+   
+    
+    animation: animacionDelBanner 10s infinite;
+    /*background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );*/
+    transition-delay: 2s;
+}
+
+#banner p{
+    font-weight: 550;
+    color:rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.331);
+    border-radius: 20px;
+    padding: 20px;
+    text-shadow: rgb(0, 0, 0) 1px 0 20px;
+}
+#banner h2{
+    font-size: 4.5em;
+    color: rgb(255, 255, 255);
+    align-items:flex-end;
+    
+}
+#banner .content{
+    max-width: 700px;
+    text-align: center;
+    margin:10px;
+}
+.logo{
+    max-width: 200px;
+}
+btn{
+background-color: #fff;
+border-radius: 5px;
+padding:  0px 10px;
+margin-top: 30px;
+}
+btn a{
+    text-decoration: none;
+    color:black;
+    
+}
+btn:hover{
+background-color: rgba(255, 255, 255, 0);
+color: #fff;
+border:1px solid rgb(255, 255, 255);
+}
+btn:hover a{
+    color:rgb(255, 255, 255);
+}
+@media (max-width:768px){
+    .imglogo{
+        max-width: 106px;
+    }
+    nav.sticky,nav{
+        
+        padding: 10px 30px;
+        
+    }
+    nav{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 90px 36px -28px inset;
+    }
+    nav ul{
+        display: none;
+    }
+    .menutoggle {
+    position: relative;
+    z-index: 11;
+    background-size: 30px;
+    background-position:center;
+    cursor: pointer;
+      background-repeat: no-repeat;
+      background: url("/img/icons/list.svg");
+      width: 16px;
+      height: 16px;
+      transform: scale(2.3);
+    background-color: rgba(255, 255, 255, 0.126);;
+    border-radius: 2.5px;
+    }
+    .menutoggle:hover{
+        background-color: rgba(255, 255, 255, 0.352);
+        border-radius: 2px;
+    }
+    nav.sticky  .menutoggle {
+        position: relative;
+        transform: scale(2);
+        
+        color: #111;
+    }
+    .menutoggle.active{
+        background-image: url("/img/icons/x-lg.svg");
+        background-repeat: no-repeat;
+        
+    }
+    .menutoggle.active:hover{
+        transform: scale(1.8);
+        
+    }
+    nav ul.active{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 10;
+    }
+    nav ul li a{
+        
+        color: rgb(0, 0, 0);
+        font-size: 1.6em;
+        font-weight: 300;
+        transition: 0.5s;
+    }
+    nav ul li{
+        margin-left: 0;
+    }
+    nav ul li a:hover{
+        color:#111;
+        letter-spacing: 3px;
+    }
+    
+} 
+footer{
+    background-color: #111;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+

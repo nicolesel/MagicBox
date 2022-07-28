@@ -4,10 +4,11 @@ window.addEventListener('scroll',function(){
     header.classList.toggle("sticky",window.scrollY > 0)
 })
 
+const menutoggle=document.querySelector('.menutoggle')
+    const navigation=document.querySelector('ul')
 
 function togglemenu(){
-    const menutoggle=document.querySelector('.menutoggle')
-    const navigation=document.querySelector('ul')
+    
     menutoggle.classList.toggle('active')
     navigation.classList.toggle('active')
 }
@@ -51,3 +52,8 @@ setInterval(changeBg,900)*/
   /*$(document).ready(function(){
     $('.sidenav').sidenav();
   });*/
+ 
+  function vamos(){
+    menutoggle.classList.remove('active')
+    navigation.classList.remove('active')
+  }
